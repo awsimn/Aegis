@@ -1,0 +1,92 @@
+{
+  "name": "aegis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest --verbose"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "setupFiles": [
+      "./__tests__/setup.js"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "./__mocks__/react-native.js",
+      "^react-native/(.*)$": "./__mocks__/react-native.js",
+      "^@react-native-async-storage/async-storage$": "./__mocks__/@react-native-async-storage/async-storage.js",
+      "^expo-location$": "./__mocks__/expo-location.js",
+      "^expo-network$": "./__mocks__/expo-network.js",
+      "^expo-notifications$": "./__mocks__/expo-notifications.js",
+      "^expo-device$": "./__mocks__/expo-device.js",
+      "^expo-constants$": "./__mocks__/expo-constants.js",
+      "^expo-linear-gradient$": "./__mocks__/expo-linear-gradient.js",
+      "^expo-sensors$": "./__mocks__/expo-sensors.js",
+      "^expo-image-picker$": "./__mocks__/expo-image-picker.js",
+      "^expo-status-bar$": "./__mocks__/expo-status-bar.js",
+      "^react-native-safe-area-context$": "./__mocks__/react-native-safe-area-context.js",
+      "^react-native-screens$": "./__mocks__/react-native-screens.js",
+      "^react-native-gesture-handler$": "./__mocks__/react-native-gesture-handler.js",
+      "^react-native-svg$": "./__mocks__/react-native-svg.js",
+      "^react-native-maps$": "./__mocks__/react-native-maps.js",
+      "^react-native-rss-parser$": "./__mocks__/react-native-rss-parser.js",
+      "^react-native-url-polyfill/auto$": "./__mocks__/react-native-url-polyfill.js",
+      "^@supabase/supabase-js$": "./__mocks__/@supabase/supabase-js.js",
+      "^@react-navigation/(.*)$": "./__mocks__/@react-navigation/$1.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(@react-native|react-native|expo|@expo|@supabase)/)"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__tests__/setup.js"
+    ]
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-navigation/bottom-tabs": "^7.8.11",
+    "@react-navigation/native": "^7.1.24",
+    "@react-navigation/native-stack": "^7.8.5",
+    "@react-navigation/stack": "^7.6.11",
+    "@supabase/supabase-js": "^2.87.1",
+    "base64-arraybuffer": "^1.0.2",
+    "expo": "~54.0.33",
+    "expo-device": "~8.0.10",
+    "expo-image-picker": "^17.0.10",
+    "expo-linear-gradient": "~15.0.8",
+    "expo-location": "~19.0.8",
+    "expo-network": "^8.0.8",
+    "expo-notifications": "~0.32.16",
+    "expo-sensors": "~15.0.8",
+    "expo-status-bar": "~3.0.9",
+    "expo-updates": "~29.0.16",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-gesture-handler": "~2.28.0",
+    "react-native-maps": "^1.20.1",
+    "react-native-rss-parser": "^1.5.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-svg": "15.12.1",
+    "react-native-url-polyfill": "^3.0.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-flow": "^7.27.1",
+    "@babel/preset-react": "^7.28.5",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^13.3.3",
+    "@types/jest": "^30.0.0",
+    "babel-jest": "^30.3.0",
+    "babel-preset-expo": "^55.0.12",
+    "jest": "^30.3.0",
+    "react-test-renderer": "^19.1.0"
+  }
+}

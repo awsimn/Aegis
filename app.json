@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "Aegis",
+    "slug": "final-project-diaster-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/aegis-logo.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/aegis-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.awsimn.aegis"
+    },
+    "android": {
+      "package": "com.awsimn.aegis",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/aegis-logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "NOTIFICATIONS",
+        "NOTIFICATIONS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon/favicon-32x32.png"
+    },
+    "plugins": [
+      "expo-notifications"
+    ],
+    "extra": {
+      "googleMapsApiKey": "AIzaSyAhi-PPGphWjPusKlR208MmG8k_oSqrClw",
+      "eas": {
+        "projectId": "f41cf84c-5b48-4b44-b0d2-c9f87a05dcc1"
+      }
+    },
+    "owner": "aasimn10",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f41cf84c-5b48-4b44-b0d2-c9f87a05dcc1"
+    }
+  }
+}

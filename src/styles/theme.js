@@ -1,0 +1,47 @@
+export const theme = {
+  colors: {
+    primary: "#0066FF",
+    primaryLight: "#EEF2FF",
+    primaryDark: "#0052CC",
+    emergency: "#FF9900",
+    emergencyLight: "#FFF7ED",
+    danger: "#EF4444",
+    dangerLight: "#FEF2F2",
+    success: "#10B981",
+    successLight: "#ECFDF5",
+    warning: "#F59E0B",
+    warningLight: "#FFFBEB",
+    secondary: "#8B5CF6",
+    secondaryLight: "#F5F3FF",
+    info: "#0EA5E9",
+    infoLight: "#F0F9FF",
+    background: "#FFFFFF",
+    surface: "#FFFFFF",
+    surfaceHighlight: "#F8FAFC",
+    surfaceHighlightDark: "#F1F5F9",
+    text: {
+      primary: "#0F172A",
+      secondary: "#64748B",
+      muted: "#94A3B8",
+      inverse: "#FFFFFF",
+    },
+    border: "#E2E8F0",
+    borderLight: "#F1F5F9",
+  },
+  typography: {
+    header: { fontSize: 24, fontWeight: "800", letterSpacing: -0.5, color: "#0F172A" },
+    subHeader: { fontSize: 18, fontWeight: "700", letterSpacing: -0.3, color: "#1E293B" },
+    body: { fontSize: 15, lineHeight: 24, fontWeight: "500", color: "#334155" },
+    caption: { fontSize: 13, lineHeight: 18, color: "#64748B", fontWeight: "600" },
+    button: { fontSize: 16, fontWeight: "700", letterSpacing: 0.5 },
+  },
+  spacing: { xs: 4, sm: 8, md: 16, lg: 24, xl: 32, xxl: 48 },
+  borderRadius: { sm: 8, md: 12, lg: 16, xl: 24, full: 9999 },
+  shadows: {
+    none: { shadowColor: "transparent", shadowOffset: { width: 0, height: 0 }, shadowOpacity: 0, shadowRadius: 0, elevation: 0 },
+    soft: { shadowColor: "#000", shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.05, shadowRadius: 10, elevation: 2 },
+    medium: { shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.08, shadowRadius: 15, elevation: 4 },
+  },
+};
+
+export const lightTheme = theme;
